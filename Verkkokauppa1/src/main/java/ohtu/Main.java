@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
-        Kirjanpito kirjanpito =(Kirjanpito) ctx.getBean("kirjan");
+        Kirjanpito kirjanpito =(Kirjanpito) ctx.getBean("kirjanpito");
 //        Varasto varasto = new Varasto(kirjanpito);
 //        Pankki pankki = new Pankki(kirjanpito);
 //        Viitegeneraattori viitegen = new Viitegeneraattori();
