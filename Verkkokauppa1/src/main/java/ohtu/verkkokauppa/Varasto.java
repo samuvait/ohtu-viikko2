@@ -5,11 +5,11 @@ import java.util.*;
 public class Varasto implements VarastoIO {
 
     
-    private Kirjanpito kirjanpito;
+    private KirjanpitoIO kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
     public Varasto(KirjanpitoIO kirjanpito) {
-        kirjanpito = kirjanpito;
+        this.kirjanpito = kirjanpito;
         saldot = new HashMap<Tuote, Integer>();
         alustaTuotteet();
     }
